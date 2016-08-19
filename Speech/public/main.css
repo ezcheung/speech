@@ -8,14 +8,20 @@ input{
   align: center;
 }
 
+h3{
+  color:white;
+}
+
 #app{
   margin: auto;
   padding: 10px;
   text-align: center;
+  color: white;
 }
 
 html, body {
   margin: 0;
   height: 100%;
   text-align: center;
+  background-color: #444;
 }

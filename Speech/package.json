@@ -13,7 +13,7 @@
     "strict-uri-encode": "^1.1.0"
   },
   "scripts": {
-    "start": "nodemon basic-server.js"
+    "start": "node basic-server.js"
   },
   "devDependencies": {
     "babelify": "^7.3.0"
