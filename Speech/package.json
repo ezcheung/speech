@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  }
+}
