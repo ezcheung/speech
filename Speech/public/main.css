@@ -1,0 +1,21 @@
+.main{
+  margin: auto;
+  align: center;
+  padding: 0px;
+}
+
+input{
+  align: center;
+}
+
+#app{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+}

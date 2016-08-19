@@ -5,7 +5,7 @@ export default class MainView extends React.Component{
     super(props);
     this.state = {
       input: '',
-      vowels: ['a', 'e', 'i', 'o', 'u', 'oo', 'y', 'ou', 'oi', 'ai', 'ao', 'ei', 'oy', 'ay', 'uy']
+      vowels: ['a', 'e', 'i', 'o', 'u', 'oo', 'y']
     }
   }
 
@@ -20,6 +20,7 @@ export default class MainView extends React.Component{
         <label>
           Type in here
         </label>
+        <br/>
         <input
           className='.input'
           defaultValue={component.state.input}
@@ -29,13 +30,19 @@ export default class MainView extends React.Component{
           }
           />
         <div>
-          {component.fn(component.state.input)}
+          <h1>{component.convert(component.state.input)}</h1>
         </div>
       </div>
     )
   }
 
-  fn(str){
-    return str.replace(/[aeiouAEIOU]/g, this.state.vowels[Math.floor(Math.random() * this.state.vowels.length)]);
+  convert(str){
+    //return str.replace(/[aeiouAEIOU]/g, this.state.vowels[Math.floor(Math.random() * this.state.vowels.length)]);
+    var toRet = "";
+    for(var i = 0; i < str.length; i++){
+      if(/[aeiouAEIOU]/.test(str.charAt(i))) toRet += this.state.vowels[Math.floor(Math.random() * this.state.vowels.length)];
+      else toRet += str.charAt(i);
+    }
+    return toRet.toUpperCase();
   }
 }
